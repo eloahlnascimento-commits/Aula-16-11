@@ -1,0 +1,221 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515;
+    font-family: Arial, sans-serif;
+    max-width: 120px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background: #42baf0;
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.botao {
+    background: white;
+    color: #333;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+/* Banner */
+.banner {
+    height: 450px;
+    background: #42baf0 url("imagens/banner.jpg") center bottom / cover no-repeat;
+    text-align: center;
+    padding-top: 70px;
+    color: white;
+}
+
+.banner h1 {
+    letter-spacing: 7px;
+    font-family: Georgia, serif;
+}
+
+.banner span {
+    display: block;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+/* Textos e imagens */
+.linha {
+    display: flex;
+    background: #fffaf7;
+}
+
+.texto {
+    width: 50%;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.texto h2 {
+    font-family: Georgia, serif;
+    margin-bottom: 20px;
+    color: #202b35;
+}
+
+.texto p {
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.texto a {
+    color: #222;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.linha img {
+    width: 50%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Serviços */
+.servicos {
+    display: flex;
+}
+
+.servicos div {
+    width: 50%;
+    height: 350px;
+    text-align: center;
+    padding: 260px 30px 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.design {
+    background-image: url("imagens/cerejas.jpg");
+    color: #164c45;
+}
+
+.fotografia {
+    background-image: url("imagens/tangerina.jpg");
+    color: #164c45;
+    width: 10px;
+    padding: 20px;
+    
+}
+
+/* Depoimentos */
+.depoimentos {
+    background: #fffaf7;
+    text-align: center;
+    padding: 90px 30px;
+}
+
+.depoimentos h3 {
+    color: #999;
+    letter-spacing: 5px;
+    margin-bottom: 50px;
+}
+
+.clientes {
+    display: flex;
+    gap: 30px;
+}
+
+.clientes div {
+    width: 33.3%;
+}
+
+.clientes img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.clientes p {
+    color: #777;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.clientes h4 {
+    margin-bottom: 8px;
+}
+
+.clientes small {
+    color: #aaa;
+}
+
+/* Galeria */
+.galeria {
+    display: flex;
+}
+
+
+.redes {
+    font-size: 18px;
+}
+
+/* Celular */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin-left: 5px;
+    }
+
+    .linha {
+        flex-direction: column;
+    }
+
+    .texto, .linha img {
+        width: 100%;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .servicos div {
+        width: 100%;
+    }
+
+    .clientes {
+        flex-direction: column;
+    }
+
+    .clientes div {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .galeria {
+        flex-wrap: wrap;
+    }
+
+    .galeria img {
+        width: 50%;
+    }
+}
